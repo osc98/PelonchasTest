@@ -68,7 +68,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "Cambio de proyecto",
+  "description": "Cambio de proyecto pelon",
   "cordova": {
     "plugins": {
       "cordova-plugin-googleplus": {},
