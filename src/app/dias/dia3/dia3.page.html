@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia3
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia2')">
+      <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia4')">
+      <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/city.png"/>
+    <div class="card-title">03-Enero-2021</div>
+    <div class="card-subtitle">Domingo <br>Crear un huerto</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/cosecha.png" class="slide-image"/>
+      <h2 class="slide-title">Crear un huerto!</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/casa.png" class="slide-image"/>
+      <h2 class="slide-title">1-	Elegir un espacio en casa con luz natural</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/tabla.png" class="slide-image"/>
+      <h2 class="slide-title">2-	Elegir una mesa para poner tu huerto </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/maceta.png" class="slide-image"/>
+      <h2 class="slide-title">3-	Elegir las macetas que se pondrán y acomodarlas. </h2>
+    </ion-slide>
+    
+  </ion-slides>
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>
+
+

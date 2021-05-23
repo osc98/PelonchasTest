@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-menu contentId="content1" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+    <ion-item tappable=""  (click)="irpagina('/home')" button>
+      <ion-icon name="information-circle-outline" slot="start" ></ion-icon>
+      about
+  </ion-item>
+  <ion-item tappable="" (click)="irpagina('/dia1')" button>
+    <ion-icon name="calendar-outline" slot="start"></ion-icon>
+    actividades
+  </ion-item>
+  <ion-item (click)="logout()" button>
+    <ion-icon name="log-out" slot="start" ></ion-icon>
+    Salir
+</ion-item>
+</ion-list>
+</ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1" main></ion-router-outlet>
+</ion-app>

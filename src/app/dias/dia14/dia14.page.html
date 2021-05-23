@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia14
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia13')">
+        <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia1')">
+        <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/14.jpg"/>
+    <div class="card-title">14-Enero-2021</div>
+    <div class="card-subtitle">Jueves <br>Llevar tus propios recipientes para comida y agua.</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/recipiente.png" class="slide-image"/>
+      <h2 class="slide-title">Llevar tus propios recipientes para comida y agua.</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/termo.png" class="slide-image"/>
+      <h2 class="slide-title">1. Por ejemplo, al ir a una fiesta, al cine, la escuela, al trabajo, etc. </h2>
+    </ion-slide>
+    
+
+  </ion-slides>
+     
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>

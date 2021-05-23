@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia7
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia6')">
+      <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia8')">
+      <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/d6.jpg"/>
+    <div class="card-title">07-Enero-2021</div>
+    <div class="card-subtitle">Jueves <br>6.	Cambiar a detergentes biodegradables</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/detergente.png" class="slide-image"/>
+      <h2 class="slide-title">1-	Identifica algún detergente biodegradable de tu preferencia</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/detergente(1).png" class="slide-image"/>
+      <h2 class="slide-title">2-	Empezar a utilizarlo continentemente</h2>
+    </ion-slide>
+</ion-slides>
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>
+
+

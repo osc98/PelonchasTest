@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia10
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia9')">
+        <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia11')">
+        <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/10.jpg"/>
+    <div class="card-title">10-Enero-2021</div>
+    <div class="card-subtitle">Domingo <br>Separa la basura en orgánico e inorgánico </div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/tidyman.png" class="slide-image"/>
+      <h2 class="slide-title">Separa la basura en orgánico e inorgánico</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/reciclaje.png" class="slide-image"/>
+      <h2 class="slide-title">1.  Marcar dos botes (uno para cada uno).</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/reciclaje1.png" class="slide-image"/>
+      <h2 class="slide-title">2. Coloca en un cesto basura orgánica, residuos biodegradables que se descomponen gracias a la acción de microorganismos</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/reciclaje2.png" class="slide-image"/>
+      <h2 class="slide-title">3. En otro cesto, coloca basura inorgánica, residuos elaborados con materiales que no se descomponen o tardan un largo tiempo en degradarse.</h2>
+    </ion-slide>
+
+  </ion-slides>
+     
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>

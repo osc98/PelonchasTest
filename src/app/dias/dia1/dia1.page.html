@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia1
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia14')">
+      <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia2')">
+      <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/city.png"/>
+    <div class="card-title">01-Enero-2021</div>
+    <div class="card-subtitle">Viernes <br> Recolectar el agua al bañarse con una cubeta</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/save-water.png" class="slide-image"/>
+      <h2 class="slide-title">Recolectar el agua al bañarse con una cubeta!</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/cubeta.png" class="slide-image"/>
+      <h2 class="slide-title">1-	Colocar una cubeta bajo la regadera</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/llave-de-cierre.png" class="slide-image"/>
+      <h2 class="slide-title">2-	Abrir llave  </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/hucha.png" class="slide-image"/>
+      <h2 class="slide-title">3-	Dejar que el agua caiga y evitar el desperdicio </h2>
+    </ion-slide>
+    
+  </ion-slides>
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>
+
+

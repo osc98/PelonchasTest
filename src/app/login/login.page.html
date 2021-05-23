@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="boton-verde" >
+    <ion-title class="ion-text-center" >Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <img class="icon" src="assets/icon/1.png" alt="">
+  <form autocomplete="off" (submit)="doLogin()">
+    <ion-item>
+      <ion-label position="stacked" > Correo electrónico <span class="text-danger">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" > Contraseña <span class="text-danger">*</span></ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password" required="true"></ion-input>
+    </ion-item>
+    <ion-button class="boton-verde" type="submit"  expand="block">Entrar</ion-button>
+  </form>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-button class="google-red " expand="block" (click)="loginGoogle()">
+          <ion-icon  name="logo-google"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="ion-text-center ion-margin-top">
+    <a routerLink="/registro"><small>Olvidé mi Contraseña</small></a>
+  </div>
+
+
+</ion-content>

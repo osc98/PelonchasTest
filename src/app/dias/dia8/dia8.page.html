@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia8
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia7')">
+        <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia9')">
+        <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/8.jpg"/>
+    <div class="card-title">08-Enero-2021</div>
+    <div class="card-subtitle">Viernes <br> Recicla el aceite de tu cocina </div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+      <h2 class="slide-title">Reciclar el aceite usado de cocina!</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/hot-pot.png" class="slide-image"/>
+      <h2 class="slide-title">1.	Esperar a que el aceite usado se enfrié</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/agua.png" class="slide-image"/>
+      <h2 class="slide-title">2.	Colocar el aceite a retirar en una botella de plástico. </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/plastico.png" class="slide-image"/>
+      <h2 class="slide-title">3.	Guardar la botella para poder ir juntando todo el aceite consumido </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/bote-de-basura.png" class="slide-image"/>
+      <h3 class="slide-title">4.	Cerrar bien la botella y tirarla en la basura de desechos no reciclables o llevarla a un lugar de reciclado</h3>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>

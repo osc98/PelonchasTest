@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia2
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia1')">
+      <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia3')">
+      <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/d2.png"/>
+    <div class="card-title">02-Enero-2021</div>
+    <div class="card-subtitle">Sabado <br> Hacer composta</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/compost.png" class="slide-image"/>
+      <h2 class="slide-title">Tu composta!</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/residuos.png" class="slide-image"/>
+      <h2 class="slide-title">1-	Juntar los desperdicios orgánicos </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/cubeta.png" class="slide-image"/>
+      <h2 class="slide-title">2-  Almacenar en una cubeta o bote de plástico  </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/hucha.png" class="slide-image"/>
+      <h2 class="slide-title">3-	En otro recipiente agregar una capa pequeña de hojarasca, papeles, tierra de aprox. 30cm </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/papeleria-papeles-apilados.png" class="slide-image"/>
+      <h2 class="slide-title">4-	Agregar los desperdicios orgánicos</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/tejido-que-absorbe-la-humedad.png" class="slide-image"/>
+      <h2 class="slide-title">5-	Humedecer</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/three-tier-pyramid.png" class="slide-image"/>
+      <h2 class="slide-title">6-	Alternar las capas hasta tener una cantidad que consideres suficiente</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/secado-rapido.png" class="slide-image"/>
+      <h2 class="slide-title">7-	Evitar que se seque la composta.</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/tejido-que-absorbe-la-humedad.png" class="slide-image"/>
+      <h2 class="slide-title">8-	Mantenerla húmeda</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/programar.png" class="slide-image"/>
+      <h2 class="slide-title">9-	Voltear la composta a los 15 días y luego cada semana.</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/valores.png" class="slide-image"/>
+      <h2 class="slide-title">10-	Una vez lista, almacenar en costales.</h2>
+    </ion-slide>
+
+
+  </ion-slides>
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>
+
+

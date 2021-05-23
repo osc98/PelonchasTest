@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia9
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia8')">
+        <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia10')">
+        <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/9.jpg"/>
+    <div class="card-title">09-Enero-2021</div>
+    <div class="card-subtitle">Sabado <br>Utilizar transporte público, caminar o bicicleta para trasladarse </div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/bici.png" class="slide-image"/>
+      <h2 class="slide-title">Utilizar transporte público, caminar o bicicleta para trasladarse</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/autobus.png" class="slide-image"/>
+      <h2 class="slide-title">1.	En caso de ser posible, tome transporte público, camine o llegue a su destino por medio de la bicicleta</h2>
+    </ion-slide>
+
+  </ion-slides>
+     
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>

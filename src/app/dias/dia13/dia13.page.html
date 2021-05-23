@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia13
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia12')">
+        <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+      <button ion-button icon-only clear item-right (click)="irpagina('/dia14')">
+        <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/13.jpg"/>
+    <div class="card-title">13-Enero-2021</div>
+    <div class="card-subtitle">Miercoles <br>Reducir el tiempo que se usa para la ducha a 5 minutos. </div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/regadera.png" class="slide-image"/>
+      <h2 class="slide-title">Reducir el tiempo que se usa para la ducha a 5 minutos.</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/ducha.png" class="slide-image"/>
+      <h2 class="slide-title">1.	Cerrar la llave mientras te enjabonas.</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/jabon.png" class="slide-image"/>
+      <h2 class="slide-title">2.	No perder tiempo realizando otras actividades (como rasurarse, o poner música)</h2>
+    </ion-slide>
+    
+
+  </ion-slides>
+     
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>

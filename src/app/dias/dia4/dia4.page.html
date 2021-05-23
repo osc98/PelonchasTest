@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <p class="center">Dia4
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia3')">
+      <ion-icon name='caret-back-outline' icon-start></ion-icon></button> 
+    <button ion-button icon-only clear item-right (click)="irpagina('/dia5')">
+      <ion-icon name='caret-forward-outline' icon-start></ion-icon></button>
+    </p>
+    
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/img/d4.jpg"/>
+    <div class="card-title">04-Enero-2021</div>
+    <div class="card-subtitle">Lunes <br>Cambia el foco de tu cuarto por uno biodegradable</div>
+    <div class="card-subtitle"> </div>
+  </ion-card>
+
+  <ion-slides pager>
+    <ion-slide>
+      <img src="assets/img/bombilla.png" class="slide-image"/>
+      <h2 class="slide-title">Cambia tu foco ya!</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/casa.png" class="slide-image"/>
+      <h2 class="slide-title">1-	Identifica el tipo de foco de la habitación</h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/sala.png" class="slide-image"/>
+      <h2 class="slide-title">2-	Adquirir un foco biodegradable. </h2>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/bote-de-basura.png" class="slide-image"/>
+      <h2 class="slide-title">3-	Tirar el foco tradicional en su respectivo grupo de desechos </h2>
+    </ion-slide>
+    
+  </ion-slides>
+
+  <ion-button color="secondary" (click)="showToast()"><ion-icon name="help-circle-outline"></ion-icon></ion-button>
+</ion-content>
+
+
